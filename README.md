@@ -23,19 +23,19 @@ Ils correspondent à la classe Spline.
 # [* = à vérifier]
 
 ## Polynômes
-Sujet : La classe Polynome est constitué d'un tableau coeffs statique de taille 4. 
-Le coefficient devant Xt est coeffs[i]. 
-Par exemple pour P représentant X^3 + 2X^2 - X + 4 on aura P.coeffs={1,2,-1,4}.
-Exercice 1 :
-a. OK*
-b. A faire
-Exercice 2 :
-Pas trop compris ce qu'il demande par "évaluer"
-A revoir
+> La classe Polynome est constitué d'un tableau coeffs statique de taille 4. 
+> Le coefficient devant Xt est coeffs[i]. 
+> Par exemple pour P représentant X^3 + 2X^2 - X + 4 on aura P.coeffs={1,2,-1,4}.
+### Exercice 1 :
+```a. OK*```
+```b. A faire```
+### Exercice 2 :
+```Pas trop compris ce qu'il demande par "évaluer"```
+```A revoir```
 
 ## Points
-Sujet : La classe Point est constituée de deux doubles x et y.
-Exercice 3 :
+> La classe Point est constituée de deux doubles x et y.
+### Exercice 3 :
 
 
 # ...
