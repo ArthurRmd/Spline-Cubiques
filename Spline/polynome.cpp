@@ -1,12 +1,11 @@
 #include "polynome.hpp"
 #include <cassert>
 
-
 //-------------------------
 // Exercice 1 - Question a
 //-------------------------
 Polynome::Polynome(){
-  
+    Polynome P;
 }
 
 //-------------------------
@@ -14,16 +13,30 @@ Polynome::Polynome(){
 //-------------------------
 
 Polynome::Polynome(const Polynome& P){
-  
+
+    for(size_t i=0;i<=4;++i){
+
+    }
 }
 
 //------------
 // Exercice 2
 //------------
 
+///
+/// j'ai pas compris le but :/
+/// "fonction permettant d'évaluer le polynôme courant en t"
+/// je suis pas sûr pour le p=1 et le i<=4
+///
 double
-Polynome::operator()(double x) const{
-  
+Polynome::operator()(double t) const{
+    double p=1; // puissance de t ???
+    double s=0;
+    for(size_t i=0;i<=4;++i){ /// 4 => coeffs[4]
+        s=s+coeffs[i]*p;
+        p=p*t;
+    }
+    return s;
 }
 
 //------------------------
@@ -52,8 +65,6 @@ Polynome::operator=(const Polynome& P){
   }
   return *this;
 }
-
-
 
 ostream&
 operator<<(ostream& os,const Polynome &P){
@@ -119,7 +130,4 @@ operator<<(ostream& os,const Polynome &P){
     }
   }
   return os;
-
 }
-
-

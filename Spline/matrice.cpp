@@ -1,7 +1,7 @@
 #include "matrice.hpp"
 
 
-// A completer
+/// A completer ///
 
 
 bool Matrice::operator==(const Matrice& M) const{
@@ -15,7 +15,6 @@ bool Matrice::operator==(const Matrice& M) const{
   }
   return true;
 }
-
 
 bool Matrice::operator!=(const Matrice& M) const{
   if(nl!=M.nl or nc!=M.nc){
@@ -58,8 +57,6 @@ Matrice::operator*(const double& a) const{
   return R;
 }
 
-
-
 Matrice
 Matrice::operator*(const Matrice& M) const{
   assert(nc==M.nl);
@@ -75,8 +72,6 @@ Matrice::operator*(const Matrice& M) const{
   }
   return R;
 }
-
-
 
 void
 Matrice::echange_lignes(size_t i,size_t j){
@@ -97,7 +92,6 @@ Matrice::multiplie_ligne(size_t i,double a){
   }
 }
 
-
 void
 Matrice::ajoute_multiple_ligne(size_t i,size_t j,double a){
   assert(i<nl and j<nl and i!=j);
@@ -105,8 +99,6 @@ Matrice::ajoute_multiple_ligne(size_t i,size_t j,double a){
     acces(i,k)+=a*acces(j,k);
   }
 }
-
-
 
 Matrice
 Matrice::Gauss() const{
@@ -154,7 +146,7 @@ Matrice::inverse() const{
   for(size_t j=0;j<nc;++j){
     for(size_t p=np;p<nl;++p){
       if(R.acces(p,j)!=0){
-	double a=1.0/R.acces(p,j);
+        double a=1.0/R.acces(p,j);
 	R.multiplie_ligne(p,a);
 	I.multiplie_ligne(p,a);
 	for(size_t k=0;k<nl;++k){
