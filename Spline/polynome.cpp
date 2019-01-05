@@ -5,7 +5,10 @@
 // Exercice 1 - Question a
 //-------------------------
 Polynome::Polynome(){
-    Polynome P;
+    /// erreur assertion
+    for(size_t i=0; i<=4; ++i){
+        coeffs[i]=0;
+    }
 }
 
 //-------------------------
@@ -13,10 +16,12 @@ Polynome::Polynome(){
 //-------------------------
 
 Polynome::Polynome(const Polynome& P){
-
+/*
+    Polynome PP;
     for(size_t i=0;i<=4;++i){
-
+        PP[i]=P[i];
     }
+*/
 }
 
 //------------
