@@ -65,9 +65,15 @@ int main(int argc,char* argv[]){
 	  //-------------------------
 	  // Exercice 5 - Question b
 	  //-------------------------
+
+
 	  if(spline.lire_statut()==EnConstruction){
 	    spline.ajoute_point(mbev.x,mbev.y);
+	    spline.dessine_points();
+
+
 	  }
+
 	  //--------------------------
 	  // Exercice 10 - Question b
 	  //--------------------------
@@ -103,6 +109,12 @@ int main(int argc,char* argv[]){
     a.y = 30;
     a.dessine();
 
+     Point A;
+        A.x =mbev.x;
+        A.y =mbev.y;
+        A.dessine();
+
+   spline.dessine_points();
 
 
     // Dessine la spline

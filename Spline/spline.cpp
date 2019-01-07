@@ -5,7 +5,19 @@
 //-------------------------
 
 void Spline::ajoute_point(int x,int y){
- 
+    Point A;
+    A.x = x;
+    A.y = y;
+
+    if (n < POINTS_MAX){
+        P[n]= A;
+        n++;
+     }
+     else{
+        cout<<"Erreur"<<endl;
+     }
+
+     cout<<"La valeur de N est" << n <<endl;
 }
 
 //-------------------------
@@ -13,7 +25,18 @@ void Spline::ajoute_point(int x,int y){
 //-------------------------
 
 void Spline::dessine_points(){
- 
+
+    if ( n== 20){
+         cout<< "ok"<< endl;
+        Point A;
+
+        for( size_t i=0; i<20; i++){
+            A = P[i];
+            cout<<A.x<<endl;
+            A.dessine();
+        }
+    }
+
 }
 
 //-------------------------
@@ -23,7 +46,7 @@ void Spline::dessine_points(){
 
 void
 Spline::dessine(){
-  
+
 }
 
 //------------
@@ -36,15 +59,15 @@ Spline::calcule_Ainverse(){
   // On commence par ajouter artificiellement un point vallant P[0]
   P[n++]=P[0];
   // Fin de zone protégée
-  
+
   //------------
-  // Question a 
+  // Question a
   //------------
- 
+
   //------------
   // Question b
   //------------
-  
+
 }
 
 //------------
@@ -55,9 +78,9 @@ void Spline::calcule(){
   //------------
   // Question a
   //------------
- 
+
   //------------
-  // Question b 
+  // Question b
   //------------
 
   /*Matrice Bx(n,1);
@@ -67,7 +90,7 @@ void Spline::calcule(){
     Bx[i][0]=6*(P[i+1].x-2*P[i].x+P[i-1].x);
   }
   Matrice s=Ainverse*Bx;*/
-  
+
   //------------
   // Question c
   //------------
@@ -75,7 +98,7 @@ void Spline::calcule(){
   /*for(size_t i=0;i<n-1;++i){
     // Coefficient de X^3
     q[i][3]=(s[i+1][0]-s[i][0])/6;
-       
+
     // Coefficient de X^2
     q[i][2]=s[i][0]/2;
     r[i][2]=t[i][0]/2;
@@ -89,11 +112,11 @@ void Spline::calcule(){
 }
 
 //-------------------------
-// Exercice 8 - Question a 
+// Exercice 8 - Question a
 //-------------------------
 
 void Spline::dessine_spline(){
- 
+
 }
 
 //------------
@@ -102,7 +125,7 @@ void Spline::dessine_spline(){
 
 void
 Spline::reset(){
- 
+
 }
 
 //--------------------------
@@ -120,7 +143,7 @@ Spline::selectionne_point(int x,int y){
 
 void
 Spline::deplace_point(int x,int y){
- 
+
 }
 
 //--------------------------
@@ -131,7 +154,7 @@ void
 Spline::fin_deplacement(){
 
 }
-			
+
 //---------------------------
 // Fin de la zone a modifier
 //---------------------------
