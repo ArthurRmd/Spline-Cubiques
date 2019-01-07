@@ -8,6 +8,8 @@ int main(int argc,char* argv[]){
     Polynome P;
     cout<<"coucou"<<endl;
     cout<<"P="<<P[3]<<P[2]<<P[1]<<P[0]<<endl;
+
+
 /// FIN TEST
 
    // Creation d'une interface graphique de 450x580
@@ -93,6 +95,16 @@ int main(int argc,char* argv[]){
     }
     // Efface l'écran
     efface();
+
+
+
+    Point a;
+    a.x = 50;
+    a.y = 30;
+    a.dessine();
+
+
+
     // Dessine la spline
     spline.dessine();
     // Rafraichi l'écran

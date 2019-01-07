@@ -11,11 +11,16 @@ class Point{
 public:
   double x,y;
 
+
+
   //! Dessine un point à l'écran
   void dessine();
 
-  //! Teste si le point courant est proche de (cx,cy) 
+  //! Teste si le point courant est proche de (cx,cy)
   bool est_proche(int cx,int cy);
 };
+
+
+
 
 #endif
