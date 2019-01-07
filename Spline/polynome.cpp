@@ -5,8 +5,7 @@
 // Exercice 1 - Question a
 //-------------------------
 Polynome::Polynome(){
-    /// erreur assertion
-    for(size_t i=0; i<=4; ++i){
+    for(size_t i=0; i<4; ++i){
         coeffs[i]=0;
     }
 }
@@ -16,12 +15,10 @@ Polynome::Polynome(){
 //-------------------------
 
 Polynome::Polynome(const Polynome& P){
-/*
     Polynome PP;
-    for(size_t i=0;i<=4;++i){
+    for(size_t i=0;i<4;++i){
         PP[i]=P[i];
     }
-*/
 }
 
 //------------
@@ -31,14 +28,14 @@ Polynome::Polynome(const Polynome& P){
 ///
 /// j'ai pas compris le but :/
 /// "fonction permettant d'évaluer le polynôme courant en t"
-/// je suis pas sûr pour le p=1 et le i<=4
+/// je suis pas sûr pour le p=1 et le i<4
 ///
 double
 Polynome::operator()(double t) const{
     double p=1; // puissance de t ???
     double s=0;
-    for(size_t i=0;i<=4;++i){ /// 4 => coeffs[4]
-        s=s+coeffs[i]*p;
+    for(size_t i=0;i<4;++i){ /// 4 => coeffs[4]
+        s+=coeffs[i]*p;
         p=p*t;
     }
     return s;

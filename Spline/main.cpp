@@ -7,10 +7,8 @@ int main(int argc,char* argv[]){
 /// TEST ICI
     Polynome P;
     cout<<"coucou"<<endl;
-    cout<<"P="<<P[4]<<P[3]<<P[2]<<P[1]<<P[0]<<endl;
+    cout<<"P="<<P[3]<<P[2]<<P[1]<<P[0]<<endl;
 /// FIN TEST
-/**
-
 
    // Creation d'une interface graphique de 450x580
   initialise_interface(800,600);
@@ -103,10 +101,6 @@ int main(int argc,char* argv[]){
     SDL_Delay(20);
   }
   ferme_interface();
-
-
-
-  **/
 
   return 0;
 }
