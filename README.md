@@ -27,8 +27,8 @@ Ils correspondent à la classe Spline.
 > Le coefficient devant Xt est coeffs[i]. 
 > Par exemple pour P représentant X^3 + 2X^2 - X + 4 on aura P.coeffs={1,2,-1,4}.
 ### Exercice 1 :
-```a. OK*```
-```b. A faire```
+```a. OK```
+```b. OK```
 ### Exercice 2 :
 ```Pas trop compris ce qu'il demande par "évaluer"```
 ```A revoir```

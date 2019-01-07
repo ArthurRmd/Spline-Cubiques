@@ -6,9 +6,10 @@
 // Exercice 3 - Question a
 //-------------------------
 
+/// A VOIR
 void
 Point::dessine(){
-    ///dessine_rectangle(x-taille,y-taille,2*taille+1,2*taille+1);
+    dessine_rectangle(x-taille,y-taille,2*taille+1,2*taille+1);
 }
 
 //-------------------------

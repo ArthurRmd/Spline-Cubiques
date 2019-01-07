@@ -29,12 +29,12 @@ Polynome::Polynome(const Polynome& P){
 /// j'ai pas compris le but :/
 /// "fonction permettant d'évaluer le polynôme courant en t"
 /// je suis pas sûr pour le p=1 et le i<4
-///
+/// x^3 x^2 x^1
 double
 Polynome::operator()(double t) const{
     double p=1; // puissance de t ???
     double s=0;
-    for(size_t i=0;i<4;++i){ /// 4 => coeffs[4]
+    for(size_t i=0;i<4;++i){ /// 3 => coeffs[3]
         s+=coeffs[i]*p;
         p=p*t;
     }
