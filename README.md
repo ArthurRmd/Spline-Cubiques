@@ -57,13 +57,13 @@ Ils correspondent à la classe Spline.
 ## Interactions
 ### Exercice 9 :
 ```OK```
-### Exercice 10 :
-```a. ```
-```b. ```
-```c. ```
-```d. ```
-```e. ```
-```f. ```
+### Exercice 10 : (à revoir --> Océan)
+```a. cheum```
+```b. a voir```
+```c. OK```
+```d. a voir```
+```e. OK```
+```f. a voir```
 
 ## AUTRES
 ### Matrice.cpp incomplet

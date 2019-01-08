@@ -194,11 +194,9 @@ Spline::selectionne_point(int x,int y){
     while(i<n-1 && ok==0){
 
         if(P[i].est_proche(x,y)==true){
-
             statut=Dynamique;
             point_selectionne=i;
             ok=1;
-
         }
         ++i;
         if(ok==0) {
@@ -215,11 +213,10 @@ void
 Spline::deplace_point(int x,int y){
     if(point_selectionne!=-1){
         Point A;
-        A.x=x;
-        A.y=y;
+        A.x=x;  // parametre x
+        A.y=y;  // parametre y
 
-
-        P[point_selectionne] = A;
+        P[point_selectionne]=A; // Point A
         calcule();
     }
 }
