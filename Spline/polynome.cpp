@@ -1,5 +1,6 @@
 #include "polynome.hpp"
 #include <cassert>
+#include <math.h>
 
 //-------------------------
 // Exercice 1 - Question a
@@ -32,13 +33,15 @@ Polynome::Polynome(const Polynome& P){
 /// x^3 x^2 x^1
 double
 Polynome::operator()(double t) const{
-    double p=1; // puissance de t ???
-    double s=0;
-    for(size_t i=0;i<4;++i){ /// 3 => coeffs[3]
-        s+=coeffs[i]*p;
-        p=p*t;
-    }
-    return s;
+    double valeur = 0;
+
+    valeur = valeur + (pow( t, 3.0 )* coeffs[3]);
+    valeur = valeur + (pow( t, 2.0 )* coeffs[2]);
+    valeur = valeur + (pow( t, 1.0 )* coeffs[1]);
+    valeur += coeffs[0];
+
+    return valeur;
+
 }
 
 //------------------------

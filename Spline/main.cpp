@@ -63,7 +63,7 @@ int main(int argc,char* argv[]){
 	  //-------------------------
 	  if(spline.lire_statut()==EnConstruction){
 	    spline.ajoute_point(mbev.x,mbev.y);
-	    spline.dessine_points();
+	    //spline.dessine_points();
 
 
 	  }
@@ -98,12 +98,12 @@ int main(int argc,char* argv[]){
 
 
 
-        /*
+/*
     Point a;
-    a.x = 50;
-    a.y = 30;
+    a.x = 0;
+    a.y = 0;
     a.dessine();
-*/
+
 /*
      Point A;
         A.x =mbev.x;

@@ -15,7 +15,7 @@ using namespace std;
 
 class Matrice{
 private:
-  //! Classe privée représentant la ligne d'une matrice 
+  //! Classe privée représentant la ligne d'une matrice
   class Ligne;
   //! Nombre de lignes de la matrice
   size_t nl;
@@ -26,21 +26,21 @@ private:
 public:
   //! Construit une matrice vide
   Matrice();
-  
+
   //! Construit une matrice carrée nulle
   //! \param n nombre de lignes et de colonnes
   explicit Matrice(size_t n);
-  
+
   //! Construit une matrice rectangulaire nulle
   //! \param n nombre de lignes
   //! \param m nombre de colonnes
   Matrice(size_t n,size_t m);
-  
+
    //! Construit une matrice rectangulaire a partir d'une liste de coefficient
   //! \param n nombre de lignes
   //! \param m nombre de colonnes
   Matrice(size_t n,size_t m,initializer_list<double> l);
-  
+
   //! Constructeur par recopie
   Matrice(const Matrice& M);
 
@@ -52,7 +52,7 @@ public:
 
   //! Operateur d'assignement
   Matrice& operator=(const Matrice& M);
-	 
+
   //! Operateur de déplacement
   Matrice& operator=(Matrice&& L);
 
@@ -68,11 +68,11 @@ public:
   //! \param j indice de la colonne du coefficient entre 0 et colonnes()-1
   double& acces(size_t i,size_t j);
   double acces(size_t i,size_t j) const;
-  
+
   //! Retourne la ligne i
   //! \param i numéro de ligne compris entre 0 et lignes()-1
   Ligne operator[](size_t i);
-  
+
   //! Retourne la ligne i
   //! \param i numéro de ligne compris entre 0 et lignes()-1
   const Ligne operator[](size_t i) const;
@@ -130,7 +130,7 @@ public:
 
   //! Operateur d'affichage
   friend ostream& operator<<(ostream& os,const Matrice& M);
-  
+
 };
 
 
@@ -142,9 +142,9 @@ class Matrice::Ligne{
 private:
   //! Coeffisient de la ligne
   double* coeffs;
-  //! Taille de la ligne 
+  //! Taille de la ligne
   size_t taille;
-  
+
 public:
   //! Construit la ligne i de la matrice M
   Ligne(const Matrice*, size_t i);
@@ -299,7 +299,7 @@ ostream& operator<<(ostream& os,const Matrice& M){
   if (M.nl*M.nc==0){
     return os<<"Martice vide"<<endl;
   }
-  os<<setprecision(4); 
+  os<<setprecision(4);
   for(size_t i=0;i<M.nl;++i){
     os<<'[';
     for(size_t j=0;j<M.nc;++j){
