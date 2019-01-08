@@ -4,10 +4,6 @@
 
 int main(int argc,char* argv[]){
 
-/// TEST ICI
-
-/// FIN TEST
-
    // Creation d'une interface graphique de 450x580
   initialise_interface(800,600);
 
@@ -63,30 +59,33 @@ int main(int argc,char* argv[]){
 	  //-------------------------
 	  if(spline.lire_statut()==EnConstruction){
 	    spline.ajoute_point(mbev.x,mbev.y);
+	    /// ???
 	    //spline.dessine_points();
-
-
 	  }
 
 	  //--------------------------
 	  // Exercice 10 - Question b
 	  //--------------------------
+        spline.selectionne_point(mbev.x,mbev.y);
+        ///spline.statut=Statique;
 
 	  break;
 	}
       case SDL_MOUSEMOTION:
 	mev=ev.motion;
 	//--------------------------
-	// Exercice 11 - Question d
+	// Exercice 10 - Question d
 	//--------------------------
-
+    spline.deplace_point(mbev.x,mbev.y);
+    ///spline.statut=Dynamique;
 
 	break;
       case SDL_MOUSEBUTTONUP:
 	//--------------------------
-	// Exercice 11 - Question f
+	// Exercice 10 - Question f
 	//--------------------------
-
+    ///spline.fin_deplacement();
+    ///spline.statut=Dynamique;
 
 	break;
       default:
@@ -95,25 +94,6 @@ int main(int argc,char* argv[]){
     }
     // Efface l'écran
     efface();
-
-
-
-/*
-    Point a;
-    a.x = 0;
-    a.y = 0;
-    a.dessine();
-
-/*
-     Point A;
-        A.x =mbev.x;
-        A.y =mbev.y;
-        A.dessine();
-*/
-    /// TEST
-    spline.dessine_points();
-    /// TEST
-
     // Dessine la spline
     spline.dessine();
     // Rafraichi l'écran

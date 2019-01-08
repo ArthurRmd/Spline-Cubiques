@@ -9,15 +9,13 @@ void Spline::ajoute_point(int x,int y){
     A.x = x;
     A.y = y;
 
-    if (n < POINTS_MAX){
-        P[n]= A;
+    if(n<POINTS_MAX){
+        P[n]=A;
         n++;
-     }
-     else{
+     } else {
         cout<<"Erreur"<<endl;
      }
-
-     cout<<"La valeur de N est" << n <<endl;
+     cout<<"La valeur de N est "<<n<<endl;
 }
 
 //-------------------------
@@ -26,8 +24,8 @@ void Spline::ajoute_point(int x,int y){
 
 void Spline::dessine_points(){
     Point A;
-    for( size_t i=0; i<n; i++){
-        A = P[i];
+    for(size_t i=0; i<n; i++){
+        A=P[i];
         A.dessine();
     }
 }
@@ -39,11 +37,10 @@ void Spline::dessine_points(){
 
 void
 Spline::dessine(){
-    for(size_t i = 0 ; i<n; ++i){
+    for(size_t i=0 ; i<n; ++i){
         P[i].dessine();
     }
-
-    if(statut == Statique || statut == Dynamique){
+    if(statut==Statique || statut==Dynamique){
         dessine_spline();
     }
 }
@@ -56,9 +53,9 @@ void
 Spline::calcule_Ainverse(){
 
     //!\ Zone protégée /!\
-  // On commence par ajouter artificiellement un point vallant P[0]
-  P[n++]=P[0];
-  // Fin de zone protégée
+    // On commence par ajouter artificiellement un point vallant P[0]
+    P[n++]=P[0];
+    //!\ Fin de zone protégée /!\
 
   //------------
   // Question a
@@ -70,45 +67,37 @@ Spline::calcule_Ainverse(){
   // Question b
   //------------
 
+    Matrice temp(n);
 
-Matrice temp(n);
-
-for(size_t i=0 ; i<n ; ++i){
-
-    for(size_t j=0 ; j<n ; ++j){
-
-        if(i==0){
-
-            if(j==0){
-                temp.acces(i,j) = 1;
+    for(size_t i=0; i<n; ++i){
+        for(size_t j=0; j<n; ++j){
+            if(i==0){
+                if(j==0){
+                    temp.acces(i,j)=1;
+                }
+                else if(j==n-1){
+                    temp.acces(i,j)=-1;
+                }
             }
-            else if(j==n-1){
-                temp.acces(i,j)=-1;
-            }
+            else if(i==n-1){
+                if(j==0 || j==n-1){
+                    temp.acces(i,j)=2;
+                }
+                else if(j==n-2 || j==1){
+                    temp.acces(i,j)=1;
+                }
 
-        }else if(i == n-1){
-
-            if(j==0 || j==n-1){
-                temp.acces(i,j) = 2;
             }
-            else if(j==n-2 || j==1){
-                temp.acces(i,j) = 1;
+            else if(j==i-1 || j-2==i-1){
+                    temp.acces(i,j)=1;
             }
-
-        }else if(j==i-1 || j-2==i-1){
-                temp.acces(i,j)=1;
+            else if(j-1==i-1){
+                temp.acces(i,j)=4;
+            }
         }
-        else if(j-1==i-1){
-            temp.acces(i,j)=4;
-        }
-
     }
-}
-
-    cout << temp << endl;
-
-  Ainverse=temp.inverse();
-
+    cout<<temp<<endl;
+    Ainverse=temp.inverse();
 }
 
 //------------
@@ -117,11 +106,11 @@ for(size_t i=0 ; i<n ; ++i){
 
 void Spline::calcule(){
 
-     //------------
+  //------------
   // Question a
   //------------
 
-    if(statut == EnConstruction){
+    if(statut==EnConstruction){
         calcule_Ainverse();
     }
 
@@ -149,22 +138,22 @@ void Spline::calcule(){
   // Question c
   //------------
 
-  for(size_t i=0;i<n-1;++i){
-    // Coefficient de X^3
-    q[i][3]=(s[i+1][0]-s[i][0])/6;
-    r[i][3]=(t[i+1][0]-t[i][0])/6;
+    for(size_t i=0;i<n-1;++i){
+        // Coefficient de X^3
+        q[i][3]=(s[i+1][0]-s[i][0])/6;
+        r[i][3]=(t[i+1][0]-t[i][0])/6;
 
-    // Coefficient de X^2
-    q[i][2]=s[i][0]/2;
-    r[i][2]=t[i][0]/2;
+        // Coefficient de X^2
+        q[i][2]=s[i][0]/2;
+        r[i][2]=t[i][0]/2;
 
-    // Coefficient de X^1
-    q[i][1]=P[i+1].x-P[i].x-(s[i+1][0]-s[i][0])/6-s[i][0]/2;
-    r[i][1]=P[i+1].y-P[i].y-(t[i+1][0]-t[i][0])/6-t[i][0]/2;
+        // Coefficient de X^1
+        q[i][1]=P[i+1].x-P[i].x-(s[i+1][0]-s[i][0])/6-s[i][0]/2;
+        r[i][1]=P[i+1].y-P[i].y-(t[i+1][0]-t[i][0])/6-t[i][0]/2;
 
-    // Coefficient de X^0
-    q[i][0]=P[i].x;
-    r[i][0]=P[i].y;
+        // Coefficient de X^0
+        q[i][0]=P[i].x;
+        r[i][0]=P[i].y;
     }
 
 }
@@ -174,16 +163,12 @@ void Spline::calcule(){
 //-------------------------
 
 void Spline::dessine_spline(){
-
     defini_couleur_dessin(bleu);
-
     for(size_t i=0;i<(n-1); ++i){
-
         for(double j=0; j<1; j+=0.001){
             dessine_rectangle(q[i](j),r[i](j),2,2);
         }
     }
-
 }
 
 //------------
@@ -192,6 +177,9 @@ void Spline::dessine_spline(){
 
 void
 Spline::reset(){
+    cout<<"On efface"<<endl;
+    statut=EnConstruction;
+    n=0;
 
 }
 
@@ -201,25 +189,48 @@ Spline::reset(){
 
 void
 Spline::selectionne_point(int x,int y){
+    int i=1;
+    int ok=0;
+    while(i<n-1 && ok==0){
 
+        if(P[i].est_proche(x,y)==true){
+
+            statut=Dynamique;
+            point_selectionne=i;
+            ok=1;
+
+        }
+        ++i;
+        if(ok==0) {
+            point_selectionne=-1;
+        }
+    }
 }
 
 //--------------------------
-// Exercice 11 - Question c
+// Exercice 10 - Question c
 //--------------------------
 
 void
 Spline::deplace_point(int x,int y){
+    if(point_selectionne!=-1){
+        Point A;
+        A.x=x;
+        A.y=y;
 
+
+        P[point_selectionne] = A;
+        calcule();
+    }
 }
 
 //--------------------------
-// Exercice 11 - Question e
+// Exercice 10 - Question e
 //--------------------------
 
 void
 Spline::fin_deplacement(){
-
+    statut=Statique;
 }
 
 //---------------------------
@@ -236,5 +247,3 @@ StatutSpline
 Spline::lire_statut(){
   return statut;
 }
-
-

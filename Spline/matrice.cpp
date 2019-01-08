@@ -1,8 +1,6 @@
 #include "matrice.hpp"
 
-
 /// A completer ///
-
 
 bool Matrice::operator==(const Matrice& M) const{
   if(nl!=M.nl or nc!=M.nc){
@@ -122,13 +120,13 @@ Matrice::Gauss() const{
   return R;
 }
 
-/*
+/**
 size_t
 Matrice::rang() const{
 }
 */
 
-/*
+/**
 double
 Matrice::determinant() const{
 }

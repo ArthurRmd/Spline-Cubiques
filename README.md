@@ -20,8 +20,6 @@ Ils correspondent à la classe Point permettant de représenter un point à l'écran
 ### Les fichiers spline.hpp et spline.cpp
 Ils correspondent à la classe Spline.
 
-# [* = à vérifier]
-
 ## Polynômes
 > La classe Polynome est constitué d'un tableau coeffs statique de taille 4. 
 > Le coefficient devant Xt est coeffs[i]. 
@@ -30,12 +28,42 @@ Ils correspondent à la classe Spline.
 ```a. OK```
 ```b. OK```
 ### Exercice 2 :
-```Pas trop compris ce qu'il demande par "évaluer"```
-```A revoir```
+```OK```
 
 ## Points
 > La classe Point est constituée de deux doubles x et y.
 ### Exercice 3 :
+```OK```
+### Exercice 4 :
+```A REVOIR (d'après moi il y a un problème)```
 
+## Spline
+### Exercice 5 :
+```a. OK```
+```b. Je sais pas ce qu'on a fait mdrr```
+```c. OK```
+```d. OK```
+### Exercice 6 :
+```a. OK```
+```b. OK```
+### Exercice 7 :
+```a. OK```
+```b. OK```
+```c. OK```
+### Exercice 8 :
+```a. OK```
+```b. OK```
 
-# ...
+## Interactions
+### Exercice 9 :
+```OK```
+### Exercice 10 :
+```a. ```
+```b. ```
+```c. ```
+```d. ```
+```e. ```
+```f. ```
+
+## AUTRES
+### Matrice.cpp incomplet
