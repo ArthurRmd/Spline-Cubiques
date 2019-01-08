@@ -25,18 +25,11 @@ void Spline::ajoute_point(int x,int y){
 //-------------------------
 
 void Spline::dessine_points(){
-
-    if ( n== 20){
-         cout<< "ok"<< endl;
-        Point A;
-
-        for( size_t i=0; i<20; i++){
-            A = P[i];
-            cout<<A.x<<endl;
-            A.dessine();
-        }
+    Point A;
+    for( size_t i=0; i<20; i++){
+        A = P[i];
+        A.dessine();
     }
-
 }
 
 //-------------------------
@@ -63,6 +56,7 @@ Spline::calcule_Ainverse(){
   //------------
   // Question a
   //------------
+
 
   //------------
   // Question b

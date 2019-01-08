@@ -2,14 +2,13 @@
 
 /// La constante taille existe et est fixée dans le fichier point.hpp
 
-//-------------------------
-// Exercice 3 - Question a
-//-------------------------
+///-------------------------
+/// Exercice 3 - Question a
+///-------------------------
 
 /// A VOIR
 void
 Point::dessine(){
-
     double X = x;
     double Y = y;
     defini_couleur_dessin(cyan);

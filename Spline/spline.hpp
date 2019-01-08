@@ -13,20 +13,20 @@ class Spline{
 private:
   //! Points de controle de la spline
   Point P[POINTS_MAX+1];
-  
+
   //! Nombre de points de controle utilisé
   size_t n;
-  
+
   //! Polynomes décrivants la spline
   Polynome q[POINTS_MAX+1];
   Polynome r[POINTS_MAX+1];
-  
+
   //! Inverse de la matrice A
   Matrice Ainverse;
-  
+
   //! Point de controle selectionne. Vaut -1 si aucun point séléctionne.
   int point_selectionne;
-  
+
   //! Statut de la spline
   StatutSpline statut;
 
@@ -36,7 +36,7 @@ public:
 
   //! Retourne le statut de la spline
   StatutSpline lire_statut();
-  
+
   //! Ajoute un point de controle a la spline
   void ajoute_point(int x,int y);
 
@@ -66,11 +66,7 @@ public:
 
   //! Arrete le deplacement du point
   void fin_deplacement();
-  
+
 };
 
-
-
-
 #endif
-

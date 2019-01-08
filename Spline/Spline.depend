@@ -736,14 +736,14 @@
 1545261265 source:c:\users\tyrabeck\desktop\spline\matrice.cpp
 	"matrice.hpp"
 
-1545261270 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\interface.cpp
+1546940812 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\interface.cpp
 	"interface.hpp"
 
-1545261270 c:\users\utilisateur\documents\github\spline-cubiques\spline\interface.hpp
+1546940812 c:\users\utilisateur\documents\github\spline-cubiques\spline\interface.hpp
 	<SDL2/SDL.h>
 	<iostream>
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_assert.h"
@@ -776,12 +776,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_main.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_stdinc.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -810,34 +810,34 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_config.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_config.h
 	"SDL_platform.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_platform.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_platform.h
 	"AvailabilityMacros.h"
 	"TargetConditionals.h"
 	<winapifamily.h>
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\begin_code.h
+1546940812 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\begin_code.h
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\close_code.h
+1546940812 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\close_code.h
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_assert.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_assert.h
 	"SDL_config.h"
 	"begin_code.h"
 	<signal.h>
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_atomic.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_atomic.h
 	"SDL_stdinc.h"
 	"SDL_platform.h"
 	"begin_code.h"
 	<mbarrier.h>
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_audio.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -847,24 +847,24 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_error.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_endian.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_endian.h
 	"SDL_stdinc.h"
 	<endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_mutex.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_thread.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_atomic.h"
@@ -875,18 +875,18 @@
 	<stdlib.h>
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_rwops.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_clipboard.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_clipboard.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_cpuinfo.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	<intrin.h>
 	<intrin.h>
@@ -901,7 +901,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_events.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -915,7 +915,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_video.h
+1546940812 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -923,13 +923,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_pixels.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_pixels.h
 	"SDL_stdinc.h"
 	"SDL_endian.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_rect.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_rect.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_pixels.h"
@@ -937,7 +937,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_surface.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_surface.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -946,11 +946,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_blendmode.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_blendmode.h
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_keyboard.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keycode.h"
@@ -958,27 +958,27 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_keycode.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_keycode.h
 	"SDL_stdinc.h"
 	"SDL_scancode.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_scancode.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_scancode.h
 	"SDL_stdinc.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_mouse.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_joystick.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_gamecontroller.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_gamecontroller.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
@@ -986,11 +986,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_quit.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_gesture.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_gesture.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -998,66 +998,66 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_touch.h
+1546940812 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_touch.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_filesystem.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_filesystem.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_haptic.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_haptic.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_joystick.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_hints.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_hints.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_loadso.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_log.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_log.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_messagebox.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_messagebox.h
 	"SDL_stdinc.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_power.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_power.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_render.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_render.h
 	"SDL_stdinc.h"
 	"SDL_rect.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_sensor.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_sensor.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_shape.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_shape.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -1066,7 +1066,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_system.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_system.h
 	"SDL_stdinc.h"
 	"SDL_keyboard.h"
 	"SDL_render.h"
@@ -1074,51 +1074,51 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_timer.h
+1546940811 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_timer.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_version.h
+1546940812 c:\users\utilisateur\documents\github\spline-cubiques\spline\sdl2\include\sdl2\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1546874297 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\main.cpp
+1546961896 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\main.cpp
 	"interface.hpp"
 	"polynome.hpp"
 	"spline.hpp"
 
-1545261266 c:\users\utilisateur\documents\github\spline-cubiques\spline\polynome.hpp
+1546940813 c:\users\utilisateur\documents\github\spline-cubiques\spline\polynome.hpp
 	<iostream>
 
-1545261266 c:\users\utilisateur\documents\github\spline-cubiques\spline\spline.hpp
+1546962408 c:\users\utilisateur\documents\github\spline-cubiques\spline\spline.hpp
 	"polynome.hpp"
 	"matrice.hpp"
 	"interface.hpp"
 	"point.hpp"
 
-1545261266 c:\users\utilisateur\documents\github\spline-cubiques\spline\matrice.hpp
+1546940812 c:\users\utilisateur\documents\github\spline-cubiques\spline\matrice.hpp
 	<iostream>
 	<cassert>
 	<iomanip>
 	<cstring>
 
-1545261266 c:\users\utilisateur\documents\github\spline-cubiques\spline\point.hpp
+1546940812 c:\users\utilisateur\documents\github\spline-cubiques\spline\point.hpp
 	"interface.hpp"
 
-1546608264 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\point.cpp
+1546941829 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\point.cpp
 	"point.hpp"
 
-1546879444 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\polynome.cpp
+1546940813 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\polynome.cpp
 	"polynome.hpp"
 	<cassert>
 
-1545261266 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\spline.cpp
+1546962584 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\spline.cpp
 	"spline.hpp"
 
-1546542946 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\matrice.cpp
+1546940812 source:c:\users\utilisateur\documents\github\spline-cubiques\spline\matrice.cpp
 	"matrice.hpp"
 
 1546891713 source:c:\users\arthur\documents\github\spline-cubiques\spline\interface.cpp

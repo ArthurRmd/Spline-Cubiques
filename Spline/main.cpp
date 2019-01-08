@@ -5,10 +5,6 @@
 int main(int argc,char* argv[]){
 
 /// TEST ICI
-    Polynome P;
-    cout<<"coucou"<<endl;
-    cout<<"P="<<P[3]<<P[2]<<P[1]<<P[0]<<endl;
-
 
 /// FIN TEST
 
@@ -65,8 +61,6 @@ int main(int argc,char* argv[]){
 	  //-------------------------
 	  // Exercice 5 - Question b
 	  //-------------------------
-
-
 	  if(spline.lire_statut()==EnConstruction){
 	    spline.ajoute_point(mbev.x,mbev.y);
 	    spline.dessine_points();
@@ -104,18 +98,21 @@ int main(int argc,char* argv[]){
 
 
 
+        /*
     Point a;
     a.x = 50;
     a.y = 30;
     a.dessine();
-
+*/
+/*
      Point A;
         A.x =mbev.x;
         A.y =mbev.y;
         A.dessine();
-
-   spline.dessine_points();
-
+*/
+    /// TEST
+    spline.dessine_points();
+    /// TEST
 
     // Dessine la spline
     spline.dessine();
