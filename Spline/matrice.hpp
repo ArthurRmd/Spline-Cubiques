@@ -130,9 +130,7 @@ public:
 
   //! Operateur d'affichage
   friend ostream& operator<<(ostream& os,const Matrice& M);
-
 };
-
 
 /**
    Classe représentant une ligne de matrice
@@ -157,7 +155,6 @@ public:
   double& operator[](size_t j);
   double operator[](size_t j) const;
 };
-
 
 //*********************
 //* Fonctions inlines *
@@ -333,4 +330,5 @@ Matrice::Ligne::operator[](size_t j) const{
   assert(j<taille);
   return coeffs[j];
 }
+
 #endif

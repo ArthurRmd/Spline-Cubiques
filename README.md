@@ -35,12 +35,12 @@ Ils correspondent à la classe Spline.
 ### Exercice 3 :
 ```OK```
 ### Exercice 4 :
-```A REVOIR```
+```OK```
 
 ## Spline
 ### Exercice 5 :
 ```a. OK```
-```b. Je sais pas ce qu'on a fait mdrr```
+```b. OK mais je sais pas ce qu'on a fait mdrr```
 ```c. OK```
 ```d. OK```
 ### Exercice 6 :
@@ -57,14 +57,13 @@ Ils correspondent à la classe Spline.
 ## Interactions
 ### Exercice 9 :
 ```OK```
-### Exercice 10 : (à revoir --> Océan)
-```a. A VOIR```
+### Exercice 10 :
+```a. OK```
 ```b. OK```
 ```c. OK```
 ```d. OK```
 ```e. OK```
 ```f. OK```
 
-## AUTRES
-### Problème au niveau de la matrice (exo 7 ou 8)
-### Matrice.cpp incomplet ???
+## Problème(s)
+### !!! Problème au niveau du dessin des splines !!!

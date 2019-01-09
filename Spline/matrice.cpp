@@ -162,7 +162,7 @@ Matrice::inverse() const{
     }
   }
   if(R.acces(nl-1,nc-1)==0){
-    cout<<"Matrice pas inversible"<<endl;
+    cout<<"Matrice non inversible"<<endl;
     return Matrice();
   }
   return I;
