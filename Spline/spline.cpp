@@ -8,7 +8,6 @@ void Spline::ajoute_point(int x,int y){
     Point A;
     A.x = x;
     A.y = y;
-
     if(n<POINTS_MAX){
         P[n]=A;
         n++;
@@ -188,18 +187,18 @@ Spline::reset(){
 
 void
 Spline::selectionne_point(int x,int y){
-    int i=1;
+    size_t i=1;
     int ok=0;
     while(i<n-1 && ok==0){
         if(P[i].est_proche(x,y)==true){
-            statut=Dynamique;
             point_selectionne=i;
             ok=1;
+            statut=Dynamique;
         }
-        ++i;
-        if(ok==0) {
+        if(ok==0){
             point_selectionne=-1;
         }
+        ++i;
     }
 }
 
