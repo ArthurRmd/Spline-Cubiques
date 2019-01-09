@@ -54,9 +54,11 @@ int main(int argc,char* argv[]){
 	mbev=ev.button;
 	switch(mbev.button){
 	case SDL_BUTTON_LEFT:
+
 	  //-------------------------
 	  // Exercice 5 - Question b
 	  //-------------------------
+
 	  if(spline.lire_statut()==EnConstruction){
 	    spline.ajoute_point(mbev.x,mbev.y);
 	    /// ???
@@ -66,26 +68,34 @@ int main(int argc,char* argv[]){
 	  //--------------------------
 	  // Exercice 10 - Question b
 	  //--------------------------
-        spline.selectionne_point(mbev.x,mbev.y);
-        ///spline.statut=Statique;
+
+        if(spline.lire_statut()==Statique){
+            spline.selectionne_point(mbev.x,mbev.y);
+        }
 
 	  break;
 	}
       case SDL_MOUSEMOTION:
 	mev=ev.motion;
+
 	//--------------------------
 	// Exercice 10 - Question d
 	//--------------------------
-    spline.deplace_point(mbev.x,mbev.y);
-    ///spline.statut=Dynamique;
+
+    if(spline.lire_statut()==Dynamique){
+        spline.deplace_point(mev.x,mev.y);
+    }
 
 	break;
       case SDL_MOUSEBUTTONUP:
+
 	//--------------------------
 	// Exercice 10 - Question f
 	//--------------------------
-    ///spline.fin_deplacement();
-    ///spline.statut=Dynamique;
+
+    if(spline.lire_statut()==Dynamique){
+        spline.fin_deplacement();
+    }
 
 	break;
       default:

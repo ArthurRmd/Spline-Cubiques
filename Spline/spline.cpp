@@ -180,7 +180,6 @@ Spline::reset(){
     cout<<"On efface"<<endl;
     statut=EnConstruction;
     n=0;
-
 }
 
 //--------------------------
@@ -192,7 +191,6 @@ Spline::selectionne_point(int x,int y){
     int i=1;
     int ok=0;
     while(i<n-1 && ok==0){
-
         if(P[i].est_proche(x,y)==true){
             statut=Dynamique;
             point_selectionne=i;
@@ -215,7 +213,6 @@ Spline::deplace_point(int x,int y){
         Point A;
         A.x=x;  // parametre x
         A.y=y;  // parametre y
-
         P[point_selectionne]=A; // Point A
         calcule();
     }
@@ -228,6 +225,7 @@ Spline::deplace_point(int x,int y){
 void
 Spline::fin_deplacement(){
     statut=Statique;
+    point_selectionne=-1;
 }
 
 //---------------------------

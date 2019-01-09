@@ -35,7 +35,7 @@ Ils correspondent à la classe Spline.
 ### Exercice 3 :
 ```OK```
 ### Exercice 4 :
-```A REVOIR (d'après moi il y a un problème)```
+```A REVOIR```
 
 ## Spline
 ### Exercice 5 :
@@ -58,12 +58,13 @@ Ils correspondent à la classe Spline.
 ### Exercice 9 :
 ```OK```
 ### Exercice 10 : (à revoir --> Océan)
-```a. cheum```
-```b. a voir```
+```a. A VOIR```
+```b. OK```
 ```c. OK```
-```d. a voir```
+```d. OK```
 ```e. OK```
-```f. a voir```
+```f. OK```
 
 ## AUTRES
-### Matrice.cpp incomplet
+### Problème au niveau de la matrice (exo 7 ou 8)
+### Matrice.cpp incomplet ???
