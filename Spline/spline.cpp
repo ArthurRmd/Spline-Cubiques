@@ -110,9 +110,9 @@ void Spline::calcule(){
   // Question a
   //------------
 
-    if(statut==EnConstruction){
-        calcule_Ainverse();
-    }
+  if(statut==EnConstruction){
+    calcule_Ainverse();
+  }
 
   //------------
   // Question b

@@ -67,9 +67,9 @@ int main(int argc,char* argv[]){
 	  // Exercice 10 - Question b
 	  //--------------------------
 
-        if(spline.lire_statut()==Statique){
-            spline.selectionne_point(mbev.x,mbev.y);
-        }
+      if(spline.lire_statut()==Statique){
+         spline.selectionne_point(mbev.x,mbev.y);
+      }
 
 	  break;
 	}

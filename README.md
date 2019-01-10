@@ -1,3 +1,8 @@
+# Auteurs : REMOND Arthur & LESECQ Océan
+### Version 1.0.1 (version finale), les anciennes versions sont disponibles sur notre GitHub :)
+### email : arthur.59320@gmail.com & ocean59t@hotmail.fr
+### --> Projet réalisé sur Code::Blocks 17.12 sous Windows 10, le projet est complet et fonctionne correctement :)
+
 # Spline-Cubiques
 
 Le but de ce projet est de créer un programme permettant de dessiner des splines cubiques paramètrées fermées.
@@ -40,7 +45,7 @@ Ils correspondent à la classe Spline.
 ## Spline
 ### Exercice 5 :
 ```a. OK```
-```b. OK mais je sais pas ce qu'on a fait mdrr```
+```b. OK```
 ```c. OK```
 ```d. OK```
 ### Exercice 6 :
@@ -65,5 +70,4 @@ Ils correspondent à la classe Spline.
 ```e. OK```
 ```f. OK```
 
-## Problème(s)
-### !!! Problème au niveau du dessin des splines !!!
+# Projet terminé !!!
