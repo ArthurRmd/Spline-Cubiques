@@ -97,6 +97,7 @@ Spline::calcule_Ainverse(){
     }
     cout<<temp<<endl;
     Ainverse=temp.inverse();
+
 }
 
 //------------
@@ -131,7 +132,7 @@ void Spline::calcule(){
   for(size_t i=1;i<=n-2;i++){
     By[i][0]=6*(P[i+1].y-2*P[i].y+P[i-1].y);
   }
-  Matrice t=Ainverse*Bx;
+  Matrice t=Ainverse*By;
 
   //------------
   // Question c

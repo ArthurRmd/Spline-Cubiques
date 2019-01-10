@@ -61,8 +61,6 @@ int main(int argc,char* argv[]){
 
 	  if(spline.lire_statut()==EnConstruction){
 	    spline.ajoute_point(mbev.x,mbev.y);
-	    /// ???
-	    //spline.dessine_points();
 	  }
 
 	  //--------------------------
