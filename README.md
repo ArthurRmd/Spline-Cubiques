@@ -1,5 +1,5 @@
 # Auteurs : REMOND Arthur & LESECQ Océan
-### Version 1.0.1 (version finale), les anciennes versions sont disponibles sur notre GitHub :)
+### Version 1.0.1 (version finale), les anciennes versions sont disponibles sur notre GitHub : https://github.com/ArthurRmd/Spline-Cubiques
 ### email : arthur.59320@gmail.com & ocean59t@hotmail.fr
 ### --> Projet réalisé sur Code::Blocks 17.12 sous Windows 10, le projet est complet et fonctionne correctement :)
 
